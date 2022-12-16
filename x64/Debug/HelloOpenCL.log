@@ -1,2 +1,3 @@
 ﻿  main.cpp
+  opencl.hpp: CL_HPP_TARGET_OPENCL_VERSION is not defined. It will default to 300 (OpenCL 3.0)
   HelloOpenCL.vcxproj -> D:\Dev\Luci404\HelloOpenCL\x64\Debug\HelloOpenCL.exe

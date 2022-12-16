@@ -35,6 +35,10 @@ int main(int argc, char** argv)
 
 	cl::CommandQueue queue(context, device);
 	queue.enqueueNDRangeKernel(kernel, cl::NullRange, cl::NDRange(16), cl::NullRange);
+	queue.enqueueReadBuffer(buffer, true, 0, sizeof(result), result);
+
+	std::cout << result;
+	std::cin.get();
 
 	return 0;
 }
